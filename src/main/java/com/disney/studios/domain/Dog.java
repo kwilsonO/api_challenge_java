@@ -1,6 +1,15 @@
-package com.disney.studios;
+package com.disney.studios.domain;
 
+import com.disney.studios.Utils;
+
+import javax.persistence.*;
+
+@Entity
 public class Dog implements Comparable<Dog> {
+
+	@Id
+    @GeneratedValue
+    private Long id;
 
 	private final String url;
 	private String enc_url;
@@ -16,6 +25,9 @@ public class Dog implements Comparable<Dog> {
 		this.breed = breed;
 	}
 
+	public Long getId() {
+        return this.id;
+    }
 
 	public void favorite(){
 		this.favCount++;
@@ -48,6 +60,7 @@ public class Dog implements Comparable<Dog> {
 		return this.voteTotal;	
 	}
 
+	@Override
 	public String toString(){
 		String out = "Url: " + this.url
 		         + "\nEncUrl: " + this.enc_url
