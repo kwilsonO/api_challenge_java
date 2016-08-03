@@ -50,9 +50,9 @@ public class DogController {
 
 		String dec_url = Utils.decodeUrl(url);
 
-		Dog d = dogRepository.getDog(dec_url);
+		int id = Integer.parseInt(dogRepository.getIdByUrl(dec_url));
 
-		d = dogRepository.findOne(d.getId());
+		Dog d = dogRepository.findOne(d.getId());
 
 		d.favorite();
 
@@ -71,7 +71,9 @@ public class DogController {
 
 		String dec_url = Utils.decodeUrl(url);
 
-		Dog d = dogRepository.getDog(dec_url);
+		int id = Integer.parseInt(dogRepository.getIdByUrl(dec_url));
+
+		Dog d = dogRepository.findOne(d.getId());
 
 		d = dogRepository.findOne(d.getId());
 
@@ -92,9 +94,9 @@ public class DogController {
 
 		String dec_url = Utils.decodeUrl(url);
 
-		Dog d = dogRepository.getDog(dec_url);
+		int id = Integer.parseInt(dogRepository.getIdByUrl(dec_url));
 
-		d = dogRepository.findOne(d.getId());
+		Dog d = dogRepository.findOne(d.getId());
 
 		d.downvote();
 
