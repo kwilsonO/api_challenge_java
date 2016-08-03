@@ -17,7 +17,7 @@ public interface DogRepository extends CrudRepository<Dog, Long> {
          * @return the full list of dogs sorted by
          *         favorite count
          */
-        @Query("SELECT * FROM Dog d ORDER BY d.favcount")
+        @Query("SELECT d FROM Dog d ORDER BY d.favCount")
         List<Dog> listAllInOrder();
 
         /**
@@ -25,7 +25,7 @@ public interface DogRepository extends CrudRepository<Dog, Long> {
          * @param breed
          * @return
          */
-        @Query("SELECT * FROM Dog d WHERE d.breed = :breed")
+        @Query("SELECT d FROM Dog d WHERE d.breed = :breed")
         List<Dog> findByBreed(@Param("breed") String breed);
 
         /**

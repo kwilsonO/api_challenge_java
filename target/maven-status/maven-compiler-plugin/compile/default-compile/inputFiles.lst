@@ -1,2 +1,6 @@
-/home/kyle/code/disney/api_challenge_java/src/main/java/com/disney/studios/Application.java
-/home/kyle/code/disney/api_challenge_java/src/main/java/com/disney/studios/PetLoader.java
+/root/IdeaProjects/api_challenge_java/src/main/java/com/disney/studios/repository/DogRepository.java
+/root/IdeaProjects/api_challenge_java/src/main/java/com/disney/studios/controller/DogController.java
+/root/IdeaProjects/api_challenge_java/src/main/java/com/disney/studios/domain/Dog.java
+/root/IdeaProjects/api_challenge_java/src/main/java/com/disney/studios/PetLoader.java
+/root/IdeaProjects/api_challenge_java/src/main/java/com/disney/studios/Application.java
+/root/IdeaProjects/api_challenge_java/src/main/java/com/disney/studios/Utils.java
