@@ -11,13 +11,21 @@ public class Dog implements Comparable<Dog> {
     @GeneratedValue
     private Long id;
 
-	private final String url;
+	private String url;
 	private String enc_url;
-	private final String breed;
+	private String breed;
 	private int favCount = 0;
 	private int upCount = 0;
 	private int downCount = 0;
 	private int voteTotal = 0;
+
+	//used only by JPA when reserealizing pre-existing objects
+	//it will fill in url and breed
+	public Dog(){
+		url = "";
+		enc_url = "";
+		breed = "";
+	}
 
 	public Dog(String url, String breed){
 		this.url = url;
