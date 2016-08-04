@@ -1,7 +1,5 @@
 package com.disney.studios.controller;
 
-import java.util.concurrent.atomic.AtomicLong;
-
 import com.disney.studios.Utils;
 import com.disney.studios.domain.Dog;
 import com.disney.studios.repository.DogRepository;

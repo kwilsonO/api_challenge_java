@@ -71,7 +71,7 @@ public class PetLoader implements InitializingBean {
             String line;
             Dog d;
             while ((line = br.readLine()) != null) {
-
+                System.out.println(line + " " + breed);
                 d = new Dog(line, breed);
 
                 this.repository.save(d);

@@ -21,10 +21,7 @@ public class Dog implements Comparable<Dog> {
 
 	//used only by JPA when reserealizing pre-existing objects
 	//it will fill in url and breed
-	public Dog(){
-		url = "";
-		enc_url = "";
-		breed = "";
+	Dog(){
 	}
 
 	public Dog(String url, String breed){
